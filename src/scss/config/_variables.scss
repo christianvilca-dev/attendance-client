@@ -1,0 +1,162 @@
+$max-width: 1200px;
+$header-height: 3.5rem;
+
+/* $border-color: #CCC;
+$text-color: #53575A;
+$dark-color: #141618; */
+
+$color-text-normal: #212529;
+$color-text-desactivado: #6C757D;
+$color-text-placeholder: #B9C0C7;
+
+$color-bg-dark: #2F353A;
+$color-bg-white: #FFFFFF;
+$color-bg-card: #F0F3F5;
+
+$color-border-form: #E4E7EA;
+$color-border-form-2: #C8CED3;
+$color-border-form-3: #D9D9D9;
+
+$color-button-primary: #0275D8;
+$color-button-secondary: #FFFFFF;
+$color-button-success: rgb(4, 8, 6);
+$color-button-info: #5BC0DE;
+$color-button-warning: #F0AD4E;
+$color-button-danger: #D9534F;
+$color-button-link: #0275D8;
+
+$color-button-hover-primary: #01549B;
+$color-button-hover-secondary: #E6E6E6;
+$color-button-hover-success: #449D44;
+$color-button-hover-info: #31B0D5;
+$color-button-hover-warning: #EC971F;
+$color-button-hover-danger: #C12E2A;
+$color-button-hover-link: #014C8C;
+
+$color-grupo-mateo: #815AA4;
+$color-grupo-mateo-2: #FF9046;
+$color-grupo-marcos: #ED3237;
+$color-grupo-lucas: #00AFEF;
+$color-grupo-juan: #00A859;
+$color-grupo-pablo: #C6A64D;
+
+$color-brand-dark: #373435;
+$color-brand-coffee: #6C5A4A;
+$color-brand-app: #FDC93E;
+$color-brand-light: #FEFEFE;
+
+$breakpoints: (
+  l: 960px
+);
+
+// Paleta de colores
+:root {
+  --color-text-normal: #212529;
+  --color-text-desactivado: #6C757D;
+  --color-text-placeholder: #B9C0C7;
+
+  --color-bg-white: #FFFFFF;
+  --color-bg-card: #F0F3F5;
+
+  --color-border-form: #E4E7EA;
+  --color-border-form-2: #C8CED3;
+
+  --color-button-primary: #0275D8;
+  --color-button-secondary: #FFFFFF;
+  --color-button-success: #4DBD74;
+  --color-button-info: #5BC0DE;
+  --color-button-warning: #F0AD4E;
+  --color-button-danger: #D9534F;
+  --color-button-link: #0275D8;
+
+  --color-button-hover-primary: #01549B;
+  --color-button-hover-secondary: #E6E6E6;
+  --color-button-hover-success: #449D44;
+  --color-button-hover-info: #31B0D5;
+  --color-button-hover-warning: #EC971F;
+  --color-button-hover-danger: #C12E2A;
+  --color-button-hover-link: #014C8C;
+
+  --color-grupo-mateo: #815AA4;
+  --color-grupo-mateo-2: #FF9046;
+  --color-grupo-marcos: #ED3237;
+  --color-grupo-lucas: #00AFEF;
+  --color-grupo-juan: #00A859;
+  --color-grupo-pablo: #C6A64D;
+
+  --color-brand-dark: #373435;
+  --color-brand-coffee: #6C5A4A;
+  --color-brand-app: #FDC93E;
+  --color-brand-light: #FEFEFE;
+
+/*   --color-first: #007BDF;
+  --color-border: #DFE0E0;
+  --color-alert: #FF3C32; */
+}
+
+// Variables de apilamiento (z-index)
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+// Variables de tipografia
+:root {
+  --h1-font-size: 1.375rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 1rem;
+    --subtitulo-font-size: .875rem;
+    --normal-font-size: .875rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .625rem;
+
+  /* @include from(l) {
+    --h1-font-size: 1.375rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 1rem;
+    --subtitulo-font-size: .875rem;
+    --normal-font-size: .875rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .625rem;
+  } */
+}
+
+/* :root {
+
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --body-font-size: .9rem;
+  --small-font-size: .75rem;
+
+  @include from(l) {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --body-font-size: 1rem;
+    --small-font-size: .8rem;
+  }
+} */
+
+
+body {
+  font-size: 20px;
+}
+
+p {
+  // 1em = 40px
+  font-size: 2em; //= 40px // aqui definimos un nuevo contexto
+  background: yellow;
+  margin: 0 auto;
+  width: 75%;
+  min-width: 320px;
+  max-width: 800px;
+}
+
+span {
+  // 1em = 80px
+  font-size: 2em; //= 80px
+}
