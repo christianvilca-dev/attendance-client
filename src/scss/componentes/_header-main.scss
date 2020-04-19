@@ -1,0 +1,53 @@
+.main-header {
+  height: $header-height;
+  border-bottom: 1px solid $color-border-form-2;//$border-color;
+}
+
+.main-header__block {
+  justify-content: space-between;
+  align-items: center;
+  //flex-wrap: wrap; // elementos i abajo
+  height: 100%;
+}
+
+.main-header__title {
+  font-size: var(--h3-font-size);
+  font-weight: bold;
+}
+
+.main-header__button {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+
+  & > svg {
+    fill: $color-text-normal;
+  }
+}
+
+.main-header__circle {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+.main-header__img-avatar {
+  position: absolute;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border-radius: 50%;
+}
+
+.main-header__notification {
+  position: relative;
+  width: 1.25rem;
+  height: 1rem;
+  top: -10%;
+  left: 70%;
+
+  border-radius: .25rem;
+  background-color: $color-button-info;
+  font-size: var(--smaller-font-size);
+  color: $color-bg-white;
+  padding: 0 .25rem;
+  //z-index: var(--z-modal);
+}
