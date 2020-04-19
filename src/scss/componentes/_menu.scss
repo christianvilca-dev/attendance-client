@@ -1,0 +1,80 @@
+.main-menu {
+  // resetear el menu
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  //display: flex;
+
+  /* @include from(l) {
+    display: flex;
+    background: transparent;
+    padding-top: 0;
+    height: auto;
+    width: auto;
+  } */
+}
+
+.main-menu__item {
+  //padding: 1rem;
+  background: #3A4248;
+
+  & svg {
+    fill: $color-button-info;
+  }
+}
+
+.main-menu__link {
+  color: $color-border-form-2; //$border-color;
+  margin-left: 1rem;
+
+  @include from(l) {
+    color: $color-text-normal; //$text-color;
+  }
+}
+
+.main-nav {
+  position: fixed;
+  height: calc(100vh - #{$header-height});
+  width: 12.5rem;//width: 60vw;
+  background: #2F353A;//$color-bg-dark;//$dark-color;
+  top: $header-height;
+  //right: -80vw;
+  /* left: -60vw;
+  transition: left .3s; */
+  left: -1px;
+  transform: translateX(-100%);
+	transition: transform .4s ease;
+  //padding-top: 1rem;
+  z-index: var(--z-fixed);
+
+  /* @include from(l) {
+    position: static;
+    background: transparent;
+    padding-top: 0;
+    height: auto;
+    width: auto;
+  }
+ */
+  &.show {
+    //right: 0;
+    //left: 0;
+    transform: translateX(0);
+  }
+}
+
+.main-menu-toggle {
+  $color: $color-bg-dark; //$dark-color;
+  width: 2.2rem;
+  height: 1.6rem;
+  background: linear-gradient(
+    $color 20%, transparent 20%, 
+    transparent 40%, $color 40%,
+    $color 60%, transparent 60%,
+    transparent 80%, $color 80%);
+  cursor: pointer;
+
+  @include from(l) {
+    display: none;
+  }
+}

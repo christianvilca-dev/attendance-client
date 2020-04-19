@@ -1,0 +1,78 @@
+{
+  "usuarios": [
+    {
+      "administrador": [
+        {
+          "name": "REGISTROS",
+          "align": "left"
+        },
+        {
+          "name": "Asistencia",
+          "url": "/asistencia",
+          "icon": "clock"
+        },
+        {
+          "name": "Confirmante",
+          "url": "/confirmante",
+          "icon": "male"
+        },
+        {
+          "name": "REPORTES",
+          "align": "left"
+        },
+        {
+          "name": "General",
+          "url": "/general",
+          "icon": "chart"
+        },
+        {
+          "name": "Individual",
+          "url": "/individual",
+          "icon": "chart"
+        },
+        {
+          "name": "Carnet",
+          "url": "/Carnet",
+          "icon": "card"
+        }
+      ]
+    },
+    {
+      "catequista": [
+        {
+          "name": "REGISTROS",
+          "align": "left"
+        },
+        {
+          "name": "Asistencia",
+          "url": "/asistencia",
+          "icon": "clock"
+        },
+        {
+          "name": "Confirmante",
+          "url": "/confirmante",
+          "icon": "male"
+        },
+        {
+          "name": "REPORTES",
+          "align": "left"
+        },
+        {
+          "name": "General",
+          "url": "/general",
+          "icon": "chart"
+        },
+        {
+          "name": "Individual",
+          "url": "/individual",
+          "icon": "chart"
+        },
+        {
+          "name": "Carnet",
+          "url": "/Carnet",
+          "icon": "card"
+        }
+      ]
+    }
+  ]
+}

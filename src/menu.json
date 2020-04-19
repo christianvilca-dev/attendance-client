@@ -1,0 +1,36 @@
+{
+  "name": "Webpack",
+  "administrador": [
+    [
+      "REGISTROS"
+    ],
+    [
+      "Asistencia",
+      "/asistencia",
+      "clock"
+    ],
+    [
+      "Confirmante",
+      "/confirmante",
+      "male"
+    ],
+    [
+      "REPORTES"
+    ],
+    [
+      "General",
+      "/general",
+      "chart"
+    ],
+    [
+      "Individual",
+      "/individual",
+      "chart"
+    ],
+    [
+      "Carnet",
+      "/carnet",
+      "card"
+    ]
+  ]
+}
