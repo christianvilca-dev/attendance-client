@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom' // Permite agregar al DOM la aplicacion hecha en react
-import { HelloWorld } from './App.jsx'
+import './scss/styles.scss'
+import { App } from './App.jsx'
+//import './css/normalize.css'
 
-ReactDOM.render(<HelloWorld />,document.getElementById('app'));
+ReactDOM.render(<App />,document.getElementById('app'));

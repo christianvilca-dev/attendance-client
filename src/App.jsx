@@ -1,11 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component, lazy, Suspense } from 'react'
+import Spinner from './components/Atoms/Spinner.jsx'
+/* import HeaderMain from './components/Organisms/HeaderMain.jsx'
+import Main from './components/Organisms/Main.jsx'
+import Header from './components/Organisms/Header.jsx' */
 
-export class HelloWorld extends Component {
+const HeaderMain = lazy(() => import('./components/Organisms/HeaderMain.jsx'))
+const Main = lazy(() => import('./components/Organisms/Main.jsx'))
+//const Header = lazy(() => import('/components/Organisms/Header.jsx'))
+
+export class App extends Component {
   render() {
     return (
-      <div>
-        <h1>hola</h1>
-      </div>
+      <>
+        <Suspense fallback={<Spinner />}>
+          <HeaderMain />
+          {/* <Header /> */}
+          <Main />
+        </Suspense>
+      </>
     )
   }
 }

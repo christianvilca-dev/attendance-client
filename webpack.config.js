@@ -4,7 +4,7 @@
 
 const htmlWebPackPlugin = require('html-webpack-plugin'),
     miniCssExtractPlugin = require('mini-css-extract-plugin'),
-    AsyncChunkNames = require('webpack-async-chunk-names-plugin'),
+    //AsyncChunkNames = require('webpack-async-chunk-names-plugin'),
     cleanWebpackPlugin = require('clean-webpack-plugin'),
     //autoprefixer = require('autoprefixer'),
     path = require('path')
@@ -15,7 +15,7 @@ module.exports = {
         // Ejm cuando carga del servidor diferentes rutas (no SPA)
         // js: y vanilla: en este caso son alias y se utilizan en el output [name]
         react: './src/index.js',
-        ts: './src/hello_ts.js'
+        //ts: './src/hello_ts.js'
     },
     // inline-source-map -> Activar los sourceMap en linea 
     //                      para saber el error segun la linea
@@ -116,9 +116,9 @@ module.exports = {
                     loader: 'css-loader',
                   }, {
                     loader: 'sass-loader',
-                    
                     options: {
-                      outputStyle: 'compressed',
+                      sourceComments: true,
+                      outputStyle: 'expanded',
                       sourceMap: true,
                     },
                   },
@@ -168,7 +168,7 @@ module.exports = {
         ]
     }, //loaders
     plugins: [
-        new AsyncChunkNames(),
+        //new AsyncChunkNames(),
         new cleanWebpackPlugin(['dist/**/*.*']), // Borra todo en todos los niveles
         new miniCssExtractPlugin({
             filename: '[name].css', // nombre variable del archivo origen
