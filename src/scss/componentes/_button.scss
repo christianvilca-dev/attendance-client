@@ -1,0 +1,17 @@
+.button {
+  color: var(--color-alert);
+  display: flex;
+  //display: inline-block;
+  border: 1px solid; // Por defecto usa el color del texto
+  padding: .5em 1em;
+  border-radius: .25rem;
+
+  &:hover {
+    background: var(--color-alert);
+    color: #419641;
+  }
+  & > .svg-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
