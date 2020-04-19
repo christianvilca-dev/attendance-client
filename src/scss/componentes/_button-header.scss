@@ -1,0 +1,37 @@
+.button-header {
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: .25rem;
+  
+  width: 2.5rem;
+  height: 2.5rem;
+  
+  /* border: 1px solid; // Por defecto usa el color del texto
+  border-color: $color-border-form-3;
+  background: $color-bg-card;
+ */
+  color: $color-text-normal;
+
+  & > svg {
+    fill: $color-text-normal;
+  }
+}
+
+.button-header__color {
+  display: inline-block;
+  border: 1px solid; // Por defecto usa el color del texto
+  padding: 0.6875rem;
+  border-radius: .25rem;
+  
+  width: 2.5rem;
+  height: 2.5rem;
+  
+  border-color: $color-border-form-3;
+  background: $color-bg-card;
+
+  color: $color-text-normal;
+
+  & > svg {
+    fill: $color-text-normal;
+  }
+}
