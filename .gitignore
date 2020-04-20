@@ -85,6 +85,7 @@ build/Release
 node_modules/
 jspm_packages/
 package-lock.json
+yarn.lock
 
 # Typescript v1 declaration files
 typings/
@@ -106,6 +107,8 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.production
 
 
 ### OSX ###
