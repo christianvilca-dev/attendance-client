@@ -13,7 +13,7 @@
         },
         {
           "name": "Confirmante",
-          "url": "/confirmante",
+          "url": "/confirmantes",
           "icon": "male"
         },
         {
@@ -22,17 +22,17 @@
         },
         {
           "name": "General",
-          "url": "/general",
+          "url": "/reportes",
           "icon": "chart"
         },
         {
           "name": "Individual",
-          "url": "/individual",
+          "url": "/reporte",
           "icon": "chart"
         },
         {
           "name": "Carnet",
-          "url": "/Carnet",
+          "url": "/carnet",
           "icon": "card"
         }
       ]
@@ -50,7 +50,7 @@
         },
         {
           "name": "Confirmante",
-          "url": "/confirmante",
+          "url": "/confirmantes",
           "icon": "male"
         },
         {
@@ -59,17 +59,17 @@
         },
         {
           "name": "General",
-          "url": "/general",
+          "url": "/reporte",
           "icon": "chart"
         },
         {
           "name": "Individual",
-          "url": "/individual",
+          "url": "/reporte",
           "icon": "chart"
         },
         {
           "name": "Carnet",
-          "url": "/Carnet",
+          "url": "/carnet",
           "icon": "card"
         }
       ]
