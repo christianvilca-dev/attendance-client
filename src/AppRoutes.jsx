@@ -29,7 +29,7 @@ const AppRoutes = () => {
     <Router>
       <Switch>
         <Protected path="/" exact component={ Home } />
-        <Protected path="/Instituions" exact component={ Institutions } />
+        <Protected path="/instituions" exact component={ Institutions } />
 
         <Protected path="/confirmantes" exact component={ Confirmantes } />
         <Protected path="/confirmantes/:id" exact component={ Confirmante } />
