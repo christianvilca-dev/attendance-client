@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from './components/Pages/Home.jsx';
+import Institutions from './components/Pages/Institutions.jsx';
 import Confirmantes from './components/Pages/Confirmantes.jsx';
 import Confirmante from './components/Pages/Confirmante.jsx';
 import Groups from './components/Pages/Groups.jsx';
@@ -19,6 +20,7 @@ import Carnet from './components/Pages/Carnet.jsx';
 import Login from './components/Pages/Login.jsx';
 import Register from './components/Pages/Register.jsx';
 import Page404 from './components/Pages/Page404.jsx';
+
 import Protected from './components/Routes/Protected.jsx';
 import Public from './components/Routes/Public.jsx';
 
@@ -27,6 +29,8 @@ const AppRoutes = () => {
     <Router>
       <Switch>
         <Protected path="/" exact component={ Home } />
+        <Protected path="/Instituions" exact component={ Institutions } />
+
         <Protected path="/confirmantes" exact component={ Confirmantes } />
         <Protected path="/confirmantes/:id" exact component={ Confirmante } />
 
